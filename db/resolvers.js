@@ -16,11 +16,39 @@ const cursos = [
     tecnologia: "React",
   },
 ];
+const libros = [
+  {
+    nombre: 'It',
+    autor: 'Stephen King',
+    editoriales: [ 'Porrua' ]
+  },
+  {
+    nombre: 'The Shining',
+    autor: 'Stephen King',
+    editoriales: [ 'Porrua', 'Planeta' ]
+  },
+  {
+    nombre: 'Berserk',
+    autor: 'Kentaro Miura',
+    editoriales: [ 'Porrua', 'Castillo' ]
+  },
+  {
+    nombre: 'Vagabond',
+    autor: 'Takehiko Inoue',
+    editoriales: [ 'Porrua', 'Castillo' ]
+  },
+  {
+    nombre: 'Vinland Saga',
+    autor: 'Makoto Yukimura',
+    editoriales: [ 'Porrua', 'Castillo' ]
+  }
+];
 
 const resolvers = {
   Query:{
     obtenerRecursos: () => cursos,
-    obtenerTecnologias: () => cursos
+    obtenerTecnologias: () => cursos,
+    obtenerLibros: () => libros
   },
 };
 

@@ -9,9 +9,15 @@ const typeDefs = gql`
     tecnologia: String
   }
 
+  type Libro {    
+    nombre: String
+    autor: String
+  }
+
   type Query {
     obtenerRecursos: [Curso]
     obtenerTecnologias: [Tecnologia]
+    obtenerLibros: [Libro]
   }
 `;
 
